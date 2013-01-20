@@ -1,5 +1,8 @@
 ﻿namespace Summerset.SemanticVersion
 {
+    /// <summary>
+    /// Indicate the results from mySemanticVersionInstance.CompareTo(myOtherInstance)
+    /// </summary>
     public enum VersionTime
     {
         Earlier = -1, 

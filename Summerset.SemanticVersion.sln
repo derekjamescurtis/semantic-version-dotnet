@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summerset.SemanticVersion", "Summerset.SemanticVersion\Summerset.SemanticVersion.csproj", "{E833B4B6-B3EE-4E4A-A3AD-2912B9B1BA01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Summerset.SemanticVersion.Tests", "Summerset.SemanticVersion.Tests\Summerset.SemanticVersion.Tests.csproj", "{ADF7F27E-8618-4E74-9F60-7ACEBEA13640}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{E833B4B6-B3EE-4E4A-A3AD-2912B9B1BA01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E833B4B6-B3EE-4E4A-A3AD-2912B9B1BA01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E833B4B6-B3EE-4E4A-A3AD-2912B9B1BA01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADF7F27E-8618-4E74-9F60-7ACEBEA13640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADF7F27E-8618-4E74-9F60-7ACEBEA13640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADF7F27E-8618-4E74-9F60-7ACEBEA13640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADF7F27E-8618-4E74-9F60-7ACEBEA13640}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
