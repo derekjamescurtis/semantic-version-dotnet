@@ -6,9 +6,24 @@
     /// </summary>
     public enum PreReleaseType
     {
+        /// <summary>
+        /// Represents the planning and very early coding stage.
+        /// </summary>
         PreAlpha,
+
+        /// <summary>
+        /// Represents the initial feature build process.
+        /// </summary>
         Alpha,
+
+        /// <summary>
+        /// Represents a version with most of the initial features implemented, and now testing of those features is ocurring.
+        /// </summary>
         Beta,
-        RTM,
+
+        /// <summary>
+        /// Represents a version is potentially ready to release.
+        /// </summary>
+        RC,
     }
 }
