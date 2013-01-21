@@ -36,7 +36,7 @@ namespace Summerset.SemanticVersion
             var matches = Regex.Matches(versionString, @"^(\d+)\.(\d+)\.(\d+)(-?[\.a-zA-Z0-9-]*)$");
             
             
-            if (matches == null || matches.Count != 1)
+            if (matches.Count != 1)
                 throw new ArgumentException(INVALID_VERSIONSTRING_FORMAT, "versionString");
 
 
@@ -124,7 +124,7 @@ namespace Summerset.SemanticVersion
         /// <returns>A new SemanticVersion instance</returns>
         public SemanticVersion IncrementPatch(bool keepPreReleaseId = false) 
         {
-            return new SemanticVersion(this.Major, this.Minor, this.Patch, keepPreReleaseId ? this.PreReleaseIdentifier : "");
+            return new SemanticVersion(this.Major, this.Minor, this.Patch + 1, keepPreReleaseId ? this.PreReleaseIdentifier : "");
         }
 
         /// <summary>
@@ -248,6 +248,16 @@ namespace Summerset.SemanticVersion
             return this.CompareTo(otherObj);
         }
 
+        public override bool Equals(object obj)
+        {
+            var semver = obj as SemanticVersion;
+
+            if (semver != null)
+                return this.Equals((SemanticVersion)obj);
+            else
+                return false;
+        }
+
         /// <summary>
         /// Indicates whether two SemanticVersion instances are equal.  This is value comparison, not reference comparison.
         /// </summary>
@@ -256,6 +266,13 @@ namespace Summerset.SemanticVersion
         public bool Equals(SemanticVersion other)
         {
             return (VersionTime)this.CompareTo(other) == VersionTime.Same ? true : false;
+        }
+
+        public override string ToString()
+        {
+            return string.IsNullOrWhiteSpace(this.PreReleaseIdentifier) ? 
+                string.Format("{0}.{1}.{2}", this.Major, this.Minor, this.Patch) : 
+                string.Format("{0}.{1}.{2}-{3}", this.Major, this.Minor, this.Patch, this.PreReleaseIdentifier);
         }
     }
 }

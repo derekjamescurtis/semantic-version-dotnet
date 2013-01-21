@@ -1,6 +1,7 @@
 # ignore the build directories
 /*/obj
 /*/bin
+/TestResults
 
 # ignore user prefs
 *.suo
