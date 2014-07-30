@@ -9,7 +9,7 @@
         <projectUrl>https://github.com/derekjamescurtis/semantic-version-dotnet</projectUrl>
         <requireLicenseAcceptance>true</requireLicenseAcceptance>
         <description>A class library adding a semantic version class with similar functionality to System.Version in mscorlib.dll for .NET</description>
-        <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+        <releaseNotes>Assembly is now signed.</releaseNotes>
         <copyright>Copyright Derek J. Curtis 2012-2014</copyright>
         <tags>Semantic Version</tags>
     </metadata>
