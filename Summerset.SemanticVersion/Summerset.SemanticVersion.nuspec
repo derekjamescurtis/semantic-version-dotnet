@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+    <metadata>
+        <id>Summerset.SemanticVersion.dll</id>
+        <version>1.1.0</version>
+        <authors>Derek J. Curtis</authors>
+        <owners>Derek J. Curtis</owners>
+        <licenseUrl>http://opensource.org/licenses/BSD-3-Clause</licenseUrl>
+        <projectUrl>https://github.com/derekjamescurtis/semantic-version-dotnet</projectUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>A class library adding a semantic version class with similar functionality to System.Version in mscorlib.dll for .NET</description>
+        <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+        <copyright>Copyright Derek J. Curtis 2012-2014</copyright>
+        <tags>Semantic Version</tags>
+    </metadata>
+</package>

@@ -5,3 +5,6 @@
 
 # ignore user prefs
 *.suo
+
+# keep signing key out of git
+*.pfx
